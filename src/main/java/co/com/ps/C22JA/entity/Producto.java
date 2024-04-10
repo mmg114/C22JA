@@ -1,13 +1,16 @@
 package co.com.ps.C22JA.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
+
 
 @Entity
 @Table(name = "productos")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Producto {
 
     @Id
@@ -15,4 +18,6 @@ public class Producto {
     private Long id;
     private String nombre;
     private Double precio;
+
+
 }
